@@ -1,0 +1,68 @@
+.new-films,
+.top-week {
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .thumbnail {
+    margin-bottom: 15px;
+  }
+}
+.new-films-item,
+.top-week-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  &__label {
+    text-align: center;
+    transition: color 0.5s;
+    @include single-text-shortener;
+  }
+  &:hover {
+    .thumbnail{
+      background-color: $accent-color;
+    }
+    strong {
+      color: lighten($gray-color, 10%)
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+  .thumbnail {
+    transition: background-color 0.25s ease;
+  }
+  .caption {
+    text-align: center;
+  }
+}
+.film-news img {
+  width: 100%;
+}
+.film-news-item  {
+  &:hover {
+    .thumbnail {
+      background-color: $accent-light;
+    }
+    h3 > a {
+      color: $accent-color;
+    }
+    .btn-warning {
+      background-color: $accent-color;
+    } 
+  }
+  &__text {
+    text-align: justify;
+  }
+  h3 > a {
+      transition: color 0.25s ease;
+  }
+  .thumbnail {
+      margin-bottom: 0;
+      transition: background-color 0.25s ease;
+  }
+  .btn-warning {
+      float: right;
+      margin-bottom: 30px;
+      transition: background-color 0.25s ease;
+  }
+}

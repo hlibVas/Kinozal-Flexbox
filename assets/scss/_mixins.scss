@@ -1,0 +1,17 @@
+@mixin single-text-shortener {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin multiple-text-shortener {
+    display: -webkit-box;
+    overflow: hidden;
+    height: 50px;
+
+    font-size: 1rem;
+    line-height: 1.5em;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
